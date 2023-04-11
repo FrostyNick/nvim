@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
   }
 
   use 'rlane/pounce.nvim' -- jump to text
-  -- use 'Exafunction/codeium.vim' -- OSS alt to Copilot
+  -- FOSS alt to Copilot below
   use {
       'Exafunction/codeium.vim',
       config = function()
