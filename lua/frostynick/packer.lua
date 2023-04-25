@@ -6,7 +6,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
-    -- don't forget about after/plugin :eyes:
+    -- don't forget about after/plugin 👀
     use 'wbthomason/packer.nvim'
 
     use {
@@ -48,18 +48,19 @@ return require('packer').startup(function(use)
     }
 
     use 'rlane/pounce.nvim' -- jump to text
-    -- FOSS alt to Copilot below
+    -- FOSS alt to Copilot below. Setup with :CodiumSync + make an account. Commented out by default because errors without setup.
+    --[[
     use {
         'Exafunction/codeium.vim',
         config = function()
             -- Change '<C-g>' here to any keycode you like.
             vim.keymap.set('i', '<c-g>', function()
-                return vim.fn['codeium#Accept']() end, { expr = true })
+                return vim.fn['codeium#Accept']() end, { expr = true }) ]]
                 --[[ vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
                 vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
                 vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true }) ]]
-        end
-    }
+--[[        end
+    } ]]
     vim.cmd('colorscheme rose-pine')
 
 end)
