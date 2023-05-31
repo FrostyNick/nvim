@@ -1,29 +1,32 @@
 -- thicc cursor vim.opt.guicursor = ""
+local o = vim.o -- vim.opt == vim.o 
+o.nu = true
+o.relativenumber = true
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+o.tabstop = 4
+o.softtabstop = 4
+o.shiftwidth = 4
+o.expandtab = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-
-vim.opt.smartindent = true
+o.smartindent = true
 
 --[[ saves all backups to undotree. might try l8r
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
+o.swapfile = false
+o.backup = false
+o.undodir = os.getenv("HOME") .. "/.vim/undodir"
+o.undofile = true
 ]]
-vim.opt.incsearch = true
+o.incsearch = true
 
-vim.opt.termguicolors = true
+o.termguicolors = true
 
-vim.opt.scrolloff = 8
--- vim.opt.signcolumn = "yes"
--- vim.opt.isfname:append("@-@")
+o.scrolloff = 8
+-- o.signcolumn = "yes"
+-- o.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+o.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+o.colorcolumn = "80"
+o.ttyfast = true -- will it speed up scrolling?
+-- o.swapfile = false
+
