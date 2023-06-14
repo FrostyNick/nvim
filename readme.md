@@ -1,3 +1,8 @@
+# This repository is no longer being updated
+Latest changes: [FrostyNick/dotfiles/.config/nvim](https://github.com/FrostyNick/dotfiles/blob/main/.config/nvim/)
+
+### Description
+
 There might be a few missing details.
 [This video](https://youtu.be/w7i4amO_zaE)
 probably fills in all the details you might run into.
